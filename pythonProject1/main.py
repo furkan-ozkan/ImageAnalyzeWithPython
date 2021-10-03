@@ -1,0 +1,38 @@
+import sys
+
+from PySide6 import QtCore,QtGui,QtWidgets
+
+import ui_main
+import ui_yuztanima
+
+class YuzTanimaWidget(QtWidgets.QWidget):
+    def __init__(self):
+        QtWidgets.QWidget.__init__(self)
+        self.ui=ui_yuztanima.Ui_yuztanimaW()
+        self.ui.setupUi(self)
+
+class MainWindow(QtWidgets.QMainWindow):
+    def __init__(self):
+        QtWidgets.QMainWindow.__init__(self)
+        self.setFixedSize(380,600)
+        self.ui = ui_main.Ui_MainWindow()
+
+        self.yuzTanimaWidget=YuzTanimaWidget()
+        self.yuzTanimaWidget.hide()
+
+        self.ui.setupUi(self)
+        self.ui.yaziTanima.clicked.connect(self.yaziTanima)
+
+    def yaziTanima(self):
+        if self.yuzTanimaWidget.isHidden():
+            self.yuzTanimaWidget.show()
+        else:
+            self.yuzTanimaWidget.hide()
+
+
+if __name__=="__main__":
+    app=QtWidgets.QApplication(sys.argv)
+    x=MainWindow()
+    x.show()
+    app.exec()
+

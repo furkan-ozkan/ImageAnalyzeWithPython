@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>380</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(27, 27, 27);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="yaziTanima">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>140</y>
+      <width>391</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(220, 202, 255);</string>
+    </property>
+    <property name="text">
+     <string>Yazı Tanıma</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nesneTanima">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>250</y>
+      <width>391</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(220, 202, 255);</string>
+    </property>
+    <property name="text">
+     <string>Nesne Tanıma</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cinsiyetBelirleme">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>480</y>
+      <width>391</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(220, 202, 255);</string>
+    </property>
+    <property name="text">
+     <string>Cinsiyet Belirleme</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="yasAraligi">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>370</y>
+      <width>391</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(220, 202, 255);</string>
+    </property>
+    <property name="text">
+     <string>Yaş Aralığı</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="yuzTanima">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>30</y>
+      <width>391</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(220, 202, 255);</string>
+    </property>
+    <property name="text">
+     <string>Yüz Tanıma</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
