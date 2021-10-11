@@ -22,6 +22,11 @@ class MainWindow(QtWidgets.QMainWindow):
 
         self.ui.setupUi(self)
         self.ui.yaziTanima.clicked.connect(self.yaziTanima)
+        self.ui.yuzTanima.clicked.connect(self.yuzTanima)
+        self.ui.nesneTanima.clicked.connect(self.nesneTanima)
+        self.ui.yasAraligi.clicked.connect(self.yasAraligi)
+        self.ui.cinsiyetBelirleme.clicked.connect(self.cinsiyetBelirleme)
+
 
     def yaziTanima(self):
         if self.yuzTanimaWidget.isHidden():
@@ -29,6 +34,29 @@ class MainWindow(QtWidgets.QMainWindow):
         else:
             self.yuzTanimaWidget.hide()
 
+    def yuzTanima(self):
+        if self.yuzTanimaWidget.isHidden():
+            self.yuzTanimaWidget.show()
+        else:
+            self.yuzTanimaWidget.hide()
+
+    def nesneTanima(self):
+        if self.yuzTanimaWidget.isHidden():
+            self.yuzTanimaWidget.show()
+        else:
+            self.yuzTanimaWidget.hide()
+
+    def yasAraligi(self):
+        if self.yuzTanimaWidget.isHidden():
+            self.yuzTanimaWidget.show()
+        else:
+            self.yuzTanimaWidget.hide()
+
+    def cinsiyetBelirleme(self):
+        if self.yuzTanimaWidget.isHidden():
+            self.yuzTanimaWidget.show()
+        else:
+            self.yuzTanimaWidget.hide()
 
 if __name__=="__main__":
     app=QtWidgets.QApplication(sys.argv)
