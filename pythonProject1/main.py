@@ -4,6 +4,7 @@ from PySide6 import QtCore,QtGui,QtWidgets
 
 import ui_main
 import ui_yuztanima
+import TextRecog
 
 class YuzTanimaWidget(QtWidgets.QWidget):
     def __init__(self):
@@ -31,6 +32,7 @@ class MainWindow(QtWidgets.QMainWindow):
     def yaziTanima(self):
         if self.yuzTanimaWidget.isHidden():
             self.yuzTanimaWidget.show()
+            TextRecog.TextRecognation()
         else:
             self.yuzTanimaWidget.hide()
 
